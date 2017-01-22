@@ -19,7 +19,7 @@
             </groups>
             <applications>
                 <application>
-                    <name>mysql slave</name>
+                    <name>Mysql Slave</name>
                 </application>
             </applications>
             <items>
@@ -60,7 +60,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>mysql slave</name>
+                            <name>Mysql Slave</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -103,7 +103,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>mysql slave</name>
+                            <name>Mysql Slave</name>
                         </application>
                     </applications>
                     <valuemap/>
