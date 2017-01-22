@@ -1,0 +1,1 @@
+UserParameter=ngx.status[*],/usr/local/zabbix/scripts/nginx_status.sh $1
