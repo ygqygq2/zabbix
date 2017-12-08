@@ -1,0 +1,2 @@
+# list directory files count
+UserParameter=files_count[*],/usr/local/zabbix/scripts/zabbix_list_files_count.sh -d $1 -t $2

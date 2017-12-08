@@ -1,0 +1,27 @@
+[Unit]
+Description=Zabbix Server
+After=network.target
+Documentation=https://www.zabbix.com/manuals
+
+[Service]
+User=zabbix
+Group=zabbix
+ExecStart=/usr/local/zabbix/sbin/zabbix_server
+ExecStartPre=/usr/bin/mkdir -p /usr/local/zabbix/logs
+ExecStartPre=/usr/bin/chown zabbix:zabbix /usr/local/zabbix/logs
+ExecStartPre=/usr/bin/chmod 0755 /usr/local/zabbix/logs
+PermissionsStartOnly=true
+PIDFile=/usr/local/zabbix/logs/zabbix_server.pid
+# file size
+LimitFSIZE=infinity
+# cpu time
+LimitCPU=infinity
+# virtual memory size
+LimitAS=infinity
+# open files
+LimitNOFILE=64000
+# processes/threads
+LimitNPROC=64000
+
+[Install]
+WantedBy=multi-user.target

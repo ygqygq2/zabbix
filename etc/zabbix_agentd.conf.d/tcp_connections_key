@@ -1,0 +1,2 @@
+# tcp connections
+UserParameter=custom.tcp[*],/usr/local/zabbix/scripts/zabbix_tcp_connections.sh $1
