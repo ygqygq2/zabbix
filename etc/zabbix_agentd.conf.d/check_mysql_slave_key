@@ -1,1 +1,1 @@
-UserParameter=mysql.slave[*],/usr/local/zabbix/shell/check_mysql_slave.sh $1 $2
+UserParameter=mysql.slave[*],/usr/local/zabbix/scripts/check_mysql_slave.sh $1 $2

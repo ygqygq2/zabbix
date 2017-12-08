@@ -21,12 +21,12 @@ case $1 in
                 fi
                 echo $result
         ;;
-	Seconds_Behind)
+        Slave_Seconds)
                 result=$(sudo ${MYSQL} --login-path=local -S $MYSQL_SOCK -e "show slave status\G"|egrep "\bSeconds_Behind_Master\b"|awk '{print $2}')
                 echo $result
         ;;
         *) 
-                echo "Usage:$0(Slave_Running|Seconds_Behind)" 
+                echo "Usage:$0(Slave_Running|Slave_Seconds)" 
         ;; 
 esac 
 
